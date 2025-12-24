@@ -1,0 +1,113 @@
+---
+
+---
+<section>
+    <h2>PROJECTS</h2>
+    <strong>EXPLORE NOW</strong>
+    <ul>
+        <li>
+            <img src="/telegram-bot.png" alt="telegram bot" />
+            <a href="#">Driver Bot</a>
+            <p>Developed a free Telegram bot that helps people train for their driving license exams
+                with interactive practice tests and instant feedback.</p>
+        </li>
+        <li>
+            <img src="/loot-box.png" alt="loot-box" />
+            <a href="#">Loot Box Energy</a>
+            <p>Built a modern web app where users can purchase energy boxes with real payments, open them to collect unique items,
+                and build their collection through exciting loot mechanics.</p>
+        </li>
+    </ul>
+</section>
+
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block-start: 100px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    h2 {
+        font-size: 55px;
+        font-weight: bold;
+        margin: 0;
+        padding-block-start: 30px;
+    }
+
+    strong {
+        font-weight: bold;
+        font-size: 15px;
+        background: linear-gradient(135deg, #9C83FF 0%, #FF9051 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-block-end: 10px;
+        letter-spacing: 9px;
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    li {
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "image title"
+        "image description";
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        max-width: 800px;
+        display: grid;
+
+    }
+
+    img {
+        grid-area: image;
+        height: 170px;
+        width: 350px;
+        border-radius: 20px;
+    }
+
+    a {
+        grid-area: title;
+        font-size: clamp(18px, 1vw, 22px);
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    p {
+        align-self: start;
+        justify-self: center;
+        max-width: 400px;
+        grid-area: description;
+        color: #878787;
+        font-size: clamp(15px, 1vw, 15px);
+        margin: 0;
+        line-height: 1.5;
+    }
+
+@media screen and (max-width: 800px) {
+    li {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: stretch;
+    }
+}
+
+</style>

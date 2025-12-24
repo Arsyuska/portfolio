@@ -1,0 +1,25 @@
+body {
+    background-color: #000;
+    color: white;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 3vw, 30px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-layer {
+    position: fixed;
+    inset: 0;
+    background-image: url('bg.svg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    height: 100vh;
+}
+
+p {
+    line-height: 1.5;
+}

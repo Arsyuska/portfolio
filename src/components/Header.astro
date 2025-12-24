@@ -1,0 +1,67 @@
+---
+
+---
+
+    <header>
+        <h1><a href="#" class="logo-link">CodeByArsen</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact" class="btn">Contact me</a></li>
+            </ul>
+        </nav>
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .logo-link {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .logo-link:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        gap: 10px
+    }
+
+    li {
+        border: 1px solid white;
+        padding: 8px 10px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+    li a{
+        color: white;
+        text-decoration: none;
+    }
+    li:last-child {
+        background-color: white;
+    }
+    li:last-child a{
+        color: black;
+    }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    h1 {
+        margin-block-end: 0;
+    }
+
+}
+</style>
